@@ -10,3 +10,5 @@ $pdo = new PDO("pgsql:" . sprintf(
     $db["pass"],
     ltrim($db["path"], "/")
 ));
+
+var_dump($pdo);
