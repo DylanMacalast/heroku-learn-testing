@@ -16,8 +16,9 @@
     
         $query = $this->pdo->prepare('SELECT * FROM test_table');
         $query->execute();
-        $query->fetchAll();
+        print_r($query->fetchAll());
     }
    
+    run();
 
 
