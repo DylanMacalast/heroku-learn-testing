@@ -20,8 +20,8 @@ class TestingDB
    
    
    public function run(){
-    $query = $this->pdo->prepare('SELECT * FROM test_table');
-       $query->execute();
+        $query = $this->setUpDB()->pdo->prepare('SELECT * FROM test_table');
+        $query->execute();
        print_r($query->fetchAll());
    }
    
