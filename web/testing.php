@@ -21,7 +21,7 @@ class TestingDB
    
    public function run(){
         $query = $this->setUpDB()->pdo->prepare('SELECT * FROM test_table');
-        $query->execute();
+       $query->execute();
        print_r($query->fetchAll());
    }
    
@@ -33,4 +33,13 @@ class TestingDB
 $test = new TestingDB();
 $test->run();
 
+/**
+ * Try it this way maybe
+ */
+
+ /**
+  * None have worked so far ... this is where you left off you were trying to 
+  * connect to a postgres database
+  */
+$db_connection = pg_connect("host=localhost dbname=DBNAME user=USERNAME password=PASSWORD");
 
