@@ -54,8 +54,8 @@ $app->get('/db/', function() use($app) {
   ));
 });
 
-echo "hehehehehe";
 
 var_dump(1);
+echo "hehe";
 
 $app->run();
