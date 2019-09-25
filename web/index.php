@@ -54,6 +54,6 @@ $app->get('/db/', function() use($app) {
   ));
 });
 
-
+echo "hehe";
 
 $app->run();
